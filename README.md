@@ -29,6 +29,13 @@ node simplescript.js run demo.simple              # compile and run in Node
 node simplescript.js demo.simple                  # shorthand for run
 ```
 
+or, run addToPath.bat on windows to just run this:
+```
+ssc demo.simple        # writes demo.ts (browser version)
+ssc demo.simple nodejs # writes demo.ts (Node version)
+```
+run and output support for exe version coming soon
+
 ### `--nodejs`
 
 By default `prompt` compiles to the browser's `prompt()`. With `--nodejs`, the output never uses the browser's `prompt()`. It compiles to `__prompt()`, a small function (included at the top of the output) that reads a line from stdin. `alert` becomes `console.log` in this mode.
