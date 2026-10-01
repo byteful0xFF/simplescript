@@ -1,0 +1,17 @@
+// SimpleScript demo
+task greet, name: string, times: number {
+  for i of [1, 2, 3] {
+    log 'Hello, ' + name
+  }
+}
+
+task sayDone {
+  log 'done'
+}
+
+x: string = prompt 'Your name?'
+greet, x, 3
+sayDone
+
+log = a
+a 'renamed log works'
